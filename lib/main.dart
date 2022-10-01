@@ -117,12 +117,12 @@ class _HomeAppState extends State<HomeApp> {
                     "$digitHours.$digitMinutes.$digitSeconds",
                     style: TextStyle(
                         color: Colors.white,
-                        fontSize: 82.0,
+                        fontSize: 70.0,
                         fontWeight: FontWeight.w600),
                   ),
                 ),
                 Container(
-                  height: 400,
+                  height: 270,
                   decoration: BoxDecoration(
                     color: Color(0xFF323F68),
                     borderRadius: BorderRadius.circular(8.0),
