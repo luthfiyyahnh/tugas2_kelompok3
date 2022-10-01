@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tugas2_kelompok3">
+    package="com.pembuatanprogram.login_app">
    <application
-        android:label="tugas2_kelompok3"
+        android:label="login_app"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
