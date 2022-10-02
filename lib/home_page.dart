@@ -50,11 +50,12 @@ class _homePageState extends State<homePage> {
                 ),
                 const Center(
                   child: Text(
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                    "Selamat bergabung di aplikasi suka-suka karya kami. Dimohon untuk beri nilai 100 untuk projek ini. xixixi ",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 12,
                     ),
+                    textAlign: TextAlign.center,
                   ),
                 ),
                 SizedBox(
@@ -132,6 +133,7 @@ class _homePageState extends State<homePage> {
                   ),
                 ),
                 SizedBox(
+                  //ini bagian tombol logout, disini langsung diarahkan ke halaman login
                   width: 100,
                   child: ElevatedButton(
                     style: ButtonStyle(
@@ -144,7 +146,7 @@ class _homePageState extends State<homePage> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         CupertinoPageRoute(
-                          builder: (context) => LoginPage(),
+                          builder: (context) => LoginPage(), //
                         ),
                       );
                     },

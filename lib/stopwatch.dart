@@ -83,7 +83,7 @@ class _HomeAppState extends State<HomeApp> {
         backgroundColor: const Color(0xFF1C2757),
         body: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(14.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -98,19 +98,19 @@ class _HomeAppState extends State<HomeApp> {
                   ),
                 ),
                 const SizedBox(
-                  height: 20.0,
+                  height: 16.0,
                 ),
                 Center(
                   child: Text(
                     "$digitHours.$digitMinutes.$digitSeconds",
                     style: const TextStyle(
                         color: Colors.white,
-                        fontSize: 70.0,
+                        fontSize: 60.0,
                         fontWeight: FontWeight.w600),
                   ),
                 ),
                 Container(
-                  height: 270,
+                  height: 240,
                   decoration: BoxDecoration(
                     color: const Color(0xFF323F68),
                     borderRadius: BorderRadius.circular(8.0),
@@ -144,7 +144,7 @@ class _HomeAppState extends State<HomeApp> {
                   ),
                 ),
                 const SizedBox(
-                  height: 20.0,
+                  height: 17.0,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -166,7 +166,7 @@ class _HomeAppState extends State<HomeApp> {
                       ),
                     ),
                     const SizedBox(
-                      width: 8.0,
+                      width: 6.0,
                     ),
                     IconButton(
                       color: Colors.white,
@@ -176,7 +176,7 @@ class _HomeAppState extends State<HomeApp> {
                       icon: const Icon(Icons.flag),
                     ),
                     const SizedBox(
-                      width: 8.0,
+                      width: 6.0,
                     ),
                     Expanded(
                       child: RawMaterialButton(

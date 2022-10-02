@@ -9,29 +9,30 @@ class hobi extends StatefulWidget {
 
 class User {
   final String username;
-  final String email;
+  final String hobi;
   final String urlAvatar;
 
   const User({
     required this.username,
-    required this.email,
+    required this.hobi,
     required this.urlAvatar,
   });
 }
 
 class _hobiState extends State<hobi> {
+  //isi konten
   List<User> users = [
     const User(
         username: 'Luthiyyah Nur Hasannah',
-        email: 'Hobi : Jajan',
+        hobi: 'Hobi : Jajan',
         urlAvatar: 'assets/alucard.jpg'),
     const User(
         username: 'Yasinda Ilmia Pakarti',
-        email: 'Hobi : Belanja',
+        hobi: 'Hobi : Belanja',
         urlAvatar: 'assets/yasinda.jpeg'),
     const User(
         username: 'M. Fathurozin afi',
-        email: 'Hobi : Main Game',
+        hobi: 'Hobi : Main Game',
         urlAvatar: 'assets/image3.jpeg')
   ];
 
@@ -44,17 +45,19 @@ class _hobiState extends State<hobi> {
       ),
       backgroundColor: const Color(0xFF1C2757),
       body: ListView.builder(
+        //ini untuk membuat msing masing konten jadi vertikal
         itemCount: users.length,
         itemBuilder: (context, index) {
           final user = users[index];
           return Card(
             child: ListTile(
               leading: CircleAvatar(
+                //ini yang bikin jadi float left
                 radius: 28,
                 backgroundImage: AssetImage(user.urlAvatar),
               ),
               title: Text(user.username),
-              subtitle: Text(user.email),
+              subtitle: Text(user.hobi),
             ),
           );
         },
