@@ -22,9 +22,9 @@ class _LoginPageState extends State<LoginPage> {
     final email = TextFormField(
       keyboardType: TextInputType.emailAddress,
       autofocus: false,
-      initialValue: 'upiaaa@gmail.com',
+      initialValue: 'username',
       decoration: InputDecoration(
-        hintText: 'Email',
+        hintText: 'password',
         contentPadding: const EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
       ),
